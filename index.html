@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        .key {
+            display: flex;
+            background-color: black;
+            border: 2px solid white;
+            width: 50px;
+            height: 50px;
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+        #\` {
+            position: absolute;
+            top: 0px;
+            left: 675px
+        }
+        #\31 {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        #\32 {
+            position: absolute;
+            left: 50px;
+            top: 0px;
+        }
+        #\33 {
+            position: absolute;
+            left: 100px;
+            top: 0px;
+        }
+        #\34 {
+            position: absolute;
+            left: 150px;
+            top: 0px;
+        }
+        #\35 {
+            position: absolute;
+            left: 200px;
+            top: 0px;
+        }
+        #\36 {
+            position: absolute;
+            left: 250px;
+            top: 0px;
+        }
+        #\37 {
+            position: absolute;
+            left: 300px;
+            top: 0px;
+        }
+        #\38 {
+            position: absolute;
+            left: 350px;
+            top: 0px;
+        }
+        #\39 {
+            position: absolute;
+            left: 400px;
+            top: 0px;
+        }
+        #\30 {
+            position: absolute;
+            left: 450px;
+            top: 0px;
+        }
+        #\- {
+            position: absolute;
+            left: 500px;
+            top: 0px;
+        }
+        #\= {
+            position: absolute;
+            left: 550px;
+            top: 0px;
+        }
+        #backspace {
+            position: absolute;
+            left: 600px;
+            top: 0px;
+            width: 75px;
+            font-size: small;
+        }
+        #tab {
+            position: absolute;
+            top: 50px;
+            width: 75px;
+        }
+        #w {
+            position: absolute;
+            top: 50px;
+            left: 125px;
+        }
+        #q {
+            position: absolute;
+            top: 50px;
+            left: 75px;
+        }
+        #e {
+            position: absolute;
+            top: 50px;
+            left: 175px;
+        }
+        #r {
+            position: absolute;
+            top: 50px;
+            left: 225px;
+        }
+        #t {
+            position: absolute;
+            top: 50px;
+            left: 275px;
+        }
+        #y {
+            position: absolute;
+            top: 50px;
+            left: 325px;
+        }
+        #u {
+            position: absolute;
+            top: 50px;
+            left: 375px;
+        }
+        #i {
+            position: absolute;
+            top: 50px;
+            left: 425px;
+        }
+        #o {
+            position: absolute;
+            top: 50px;
+            left: 475px;
+        }
+        #p {
+            position: absolute;
+            top: 50px;
+            left: 525px;
+        }
+        #\[ {
+            position: absolute;
+            top: 50px;
+            left: 575px;
+        }
+        #\] {
+            position: absolute;
+            top: 50px;
+            left: 625px;
+        }
+        #\\ {
+            position: absolute;
+            top: 50px;
+            left: 675px;
+        }
+        #caps_lock {
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            width: 80px;
+        }
+        #a {
+            position: absolute;
+            top: 100px;
+            left: 80px;
+        }
+        #s {
+            position: absolute;
+            top: 100px;
+            left: 130px;
+        }
+        #d {
+            position: absolute;
+            top: 100px;
+            left: 180px;
+        }
+        #f {
+            position: absolute;
+            top: 100px;
+            left: 230px;
+        }
+        #g {
+            position: absolute;
+            top: 100px;
+            left: 280px;
+        }
+        #h {
+            position: absolute;
+            top: 100px;
+            left: 330px;
+        }
+        #j {
+            position: absolute;
+            top: 100px;
+            left: 380px;
+        }
+        #k {
+            position: absolute;
+            top: 100px;
+            left: 430px;
+        }
+        #l {
+            position: absolute;
+            top: 100px;
+            left: 480px;
+        }
+        #\; {
+            position: absolute;
+            top: 100px;
+            left: 530px;
+        }
+        #\' {
+            position: absolute;
+            top: 100px;
+            left: 580px;
+        }
+        #enter {
+            position: absolute;
+            top: 100px;
+            left: 630px;
+            width: 95px;
+        }
+        #shift {
+            position: absolute;
+            top: 150px;
+            left: 0px;
+            width: 105px;
+        }
+        #z {
+            position: absolute;
+            top: 150px;
+            left: 105px;
+        }
+        #x {
+            position: absolute;
+            top: 150px;
+            left: 155px;
+        }
+        #c {
+            position: absolute;
+            top: 150px;
+            left: 205px;
+        }
+        #v {
+            position: absolute;
+            top: 150px;
+            left: 255px;
+        }
+        #b {
+            position: absolute;
+            top: 150px;
+            left: 305px;
+        }
+        #n {
+            position: absolute;
+            top: 150px;
+            left: 355px;
+        }
+        #m {
+            position: absolute;
+            top: 150px;
+            left: 405px;
+        }
+        #\, {
+            position: absolute;
+            top: 150px;
+            left: 455px;
+        }
+        #\. {
+            position: absolute;
+            top: 150px;
+            left: 505px;
+        }
+        #\/ {
+            position: absolute;
+            top: 150px;
+            left: 555px;
+        }
+        #shift_r {
+            position: absolute;
+            top: 150px;
+            left: 605px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div id="keys" style="display: table; height: 400px; overflow: hidden;">
+        <div id="tab" class="key">tab</div>
+        <div id="cmd" class="key">cmd</div>
+        <div id="cmd_r" class="key">cmd</div>
+        <div id="ctrl" class="key">control</div>
+        <div id="backspace" class="key">backspace</div>
+        <div id="shift_r" class="key">shift</div>
+        <div id="shift" class="key">shift</div>
+        <div id="alt" class="key">alt</div>
+        <div id="`" class="key">`</div>
+        <div id="alt_r" class="key">alt</div>
+        <div id="caps_lock" class="key">caps</div>
+        <div id="left" class="key">&larr;</div>
+        <div id="right" class="key">&rarr;</div>
+        <div id="up" class="key">&uarr;</div>
+        <div id="down" class="key">&darr;</div>
+        <div id="enter" class="key">enter</div>
+        <div id="]" class="key">]</div>
+        <div id="," class="key">,</div>
+        <div id="/" class="key">/</div>
+        <div id="\" class="key">\</div>
+        <div id="'" class="key">'</div>
+        <div id=";" class="key">;</div>
+        <div id="." class="key">.</div>
+        <div id="=" class="key">=</div>
+        <div id="-" class="key">-</div>
+        <div id="[" class="key">[</div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
