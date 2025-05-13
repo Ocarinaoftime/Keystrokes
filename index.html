@@ -17,74 +17,79 @@
             align-items: center;
             justify-content: center;
         }
+        #esc {
+            position: absolute;
+            top: 0px;
+            left: 0px
+        }
         #\` {
             position: absolute;
             top: 0px;
-            left: 675px
+            left: 725px
         }
         #\31 {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-        }
-        #\32 {
             position: absolute;
             left: 50px;
             top: 0px;
         }
-        #\33 {
+        #\32 {
             position: absolute;
             left: 100px;
             top: 0px;
         }
-        #\34 {
+        #\33 {
             position: absolute;
             left: 150px;
             top: 0px;
         }
-        #\35 {
+        #\34 {
             position: absolute;
             left: 200px;
             top: 0px;
         }
-        #\36 {
+        #\35 {
             position: absolute;
             left: 250px;
             top: 0px;
         }
-        #\37 {
+        #\36 {
             position: absolute;
             left: 300px;
             top: 0px;
         }
-        #\38 {
+        #\37 {
             position: absolute;
             left: 350px;
             top: 0px;
         }
-        #\39 {
+        #\38 {
             position: absolute;
             left: 400px;
             top: 0px;
         }
-        #\30 {
+        #\39 {
             position: absolute;
             left: 450px;
             top: 0px;
         }
-        #\- {
+        #\30 {
             position: absolute;
             left: 500px;
             top: 0px;
         }
-        #\= {
+        #\- {
             position: absolute;
             left: 550px;
             top: 0px;
         }
-        #backspace {
+        #\= {
             position: absolute;
             left: 600px;
+            top: 0px;
+        }
+        #backspace {
+            position: absolute;
+            left: 650px;
             top: 0px;
             width: 75px;
             font-size: small;
@@ -159,6 +164,11 @@
             top: 50px;
             left: 675px;
         }
+        #delete {
+            position: absolute;
+            top: 50px;
+            left: 725px;
+        }
         #caps_lock {
             position: absolute;
             top: 100px;
@@ -226,6 +236,11 @@
             left: 630px;
             width: 95px;
         }
+        #page_up {
+            position: absolute;
+            top: 100px;
+            left: 725px;
+        }
         #shift {
             position: absolute;
             top: 150px;
@@ -286,8 +301,80 @@
             position: absolute;
             top: 150px;
             left: 605px;
-            width: 120px;
+            width: 70px;
         }
+        #page_down {
+            position: absolute;
+            top: 150px;
+            left: 725px;
+        }
+        #right {
+            position: absolute;
+            top: 200px;
+            left: 725px;
+            width: 50px;
+        }
+        #left {
+            position: absolute;
+            top: 200px;
+            left: 625px;
+            width: 50px;
+        }
+        #down {
+            position: absolute;
+            top: 200px;
+            left: 675px;
+            width: 50px;
+        }
+        #up {
+            position: absolute;
+            top: 150px;
+            left: 675px;
+            width: 50px;
+        }
+        #ctrl_r {
+            position: absolute;
+            top: 200px;
+            left: 575px;
+            width: 50px;
+        }
+        #fn {
+            position: absolute;
+            top: 200px;
+            left: 525px;
+            width: 50px;
+        }
+        #alt_r {
+            position: absolute;
+            top: 200px;
+            left: 475px;
+            width: 50px;
+        }
+        #space {
+            position: absolute;
+            top: 200px;
+            width: 295px;
+            left: 180px;
+        }
+        #ctrl {
+            position: absolute;
+            width: 60px;
+            top: 200px;
+            left: 0px;
+        }
+        #cmd {
+            position: absolute;
+            width: 60px;
+            left: 60px;
+            top: 200px;
+        }
+        #alt {
+            position: absolute;
+            width: 60px;
+            left: 120px;
+            top: 200px;
+        }
+
     </style>
 </head>
 <body>
@@ -295,7 +382,8 @@
         <div id="tab" class="key">tab</div>
         <div id="cmd" class="key">cmd</div>
         <div id="cmd_r" class="key">cmd</div>
-        <div id="ctrl" class="key">control</div>
+        <div id="ctrl" class="key">ctrl</div>
+        <div id="ctrl_r" class="key">ctrl</div>
         <div id="backspace" class="key">backspace</div>
         <div id="shift_r" class="key">shift</div>
         <div id="shift" class="key">shift</div>
@@ -308,6 +396,7 @@
         <div id="up" class="key">&uarr;</div>
         <div id="down" class="key">&darr;</div>
         <div id="enter" class="key">enter</div>
+        <div id="esc" class="key">Esc</div>
         <div id="]" class="key">]</div>
         <div id="," class="key">,</div>
         <div id="/" class="key">/</div>
@@ -318,6 +407,10 @@
         <div id="=" class="key">=</div>
         <div id="-" class="key">-</div>
         <div id="[" class="key">[</div>
+        <div id="delete" class="key">Del</div>
+        <div id="page_up" class="key">PgUp</div>
+        <div id="page_down" class="key">PgDn</div>
+        <div id="fn" class="key">fn</div>
     </div>
     <script src="./main.js"></script>
 </body>

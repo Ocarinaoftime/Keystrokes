@@ -17,17 +17,21 @@ async def handler(websocket):
         connected_clients.remove(websocket)
 
 def on_press(key):
-        try:
-            key_data = {'type': 'keyboard', 'event': 'press', 'key': key.char}
-        except AttributeError:
-            key_data = {'type': 'keyboard', 'event': 'press', 'key': key.name}
-        send_data(key_data)
-
+    try:
+        key_data = {'type': 'keyboard', 'event': 'press', 'key': key.char}
+    except AttributeError:
+        key_data = {'type': 'keyboard', 'event': 'press', 'key': key.name}
+    if key_data['key'] == None:
+        key_data['key'] = 'fn'
+    send_data(key_data)
 def on_release(key):
     try:
         key_data = {'type': 'keyboard', 'event': 'release', 'key': key.char}
+        
     except AttributeError:
         key_data = {'type': 'keyboard', 'event': 'release', 'key': key.name}
+    if key_data['key'] == None:
+        key_data['key'] = 'fn'
     send_data(key_data)
 
 def send_data(data):

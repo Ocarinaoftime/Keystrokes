@@ -29,6 +29,7 @@ for (var i = 0; i < characters.length; i++) {
 websocket.addEventListener("message", ({ data }) => {
     /**@type {Data}*/
     const key = JSON.parse(data);
+    console.log(key.key);
     if (/[!@#$%^&*()]/g.test(key.key.toLowerCase())) return;
     if (document.getElementById(key.key.toLowerCase()) == null) return;
     if (key.event == "press") {
@@ -40,3 +41,6 @@ websocket.addEventListener("message", ({ data }) => {
         document.getElementById(key.key.toLowerCase()).style.color = "white";
     }
 });
+websocket.onclose = function() {
+    websocket.url = "ws://127.0.0.1:8001"
+}
